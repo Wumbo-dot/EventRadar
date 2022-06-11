@@ -33,3 +33,8 @@ var weather = {
 document.querySelector(".box button").addEventListener("click", function () {
   weather.search();
 });
+document.querySelector(".input").addEventListener("keyup", function (event) {
+  if (event.key === "Enter") {
+    weather.search();
+  }
+});
