@@ -21,31 +21,18 @@ console.log(cityName);
 var date = dateInputEl.value.trim();
     console.log(date);
 
-
-
- //var getEventData = function () {
     
-//     console.log(city)  
+ 
     var apiEvent = `https://app.ticketmaster.com/discovery/v2/events.json?city=${cityName},StartDateTime=${date}&apikey=kDANs259nX5PnjGOMkkA0AAh72DAKY2C`
 
 
     fetch(apiEvent)
         .then(response => response.json())
         .then(data => console.log(data));
-            //return response.json();
             
-        
-        //.then(function (event) {
-        
-            //displayEvent(event, city);
-            //error code here
-      //  });
-
-    // var displayEvent = function (event, searchTerm) {
-//     //searchTermEl.textContent = event.embedded.events
+            
     }
-// //}
+
 
 searchBtnEl.addEventListener("click", eventHandler);
 
-//}
