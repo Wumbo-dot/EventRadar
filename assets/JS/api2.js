@@ -38,3 +38,6 @@ document.querySelector(".input").addEventListener("keyup", function (event) {
     weather.search();
   }
 });
+$(function () {
+  $("#datepicker").datepicker();
+});
