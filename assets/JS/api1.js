@@ -44,17 +44,17 @@ var date = dateInputEl.value.trim();
           // }
         
                 
-        for (var i=0;i< 5; i++) {
+        for (var i=0;i< eventData.length; i++) {
           
-         // console.log(eventsName);
-          // var eventNameEl = document.getElementById("eventName");
-          // var eventsName = eventData[i].name;
-          // eventNameEl.textcontent = eventsName;
+         console.log(eventsName);
+          var eventNameEl = document.getElementById("eventName");
+          var eventsName = eventData[i].name;
+          eventNameEl.textcontent = eventsName;
 
-          var eventTitleEl = document.createElement("p");
-    eventTitleEl.classList = "genre";
-    eventTitleEl.setAttribute("id", "eventName2");
-    eventTitleEl.textContent = eventData[i].name;
+    //       var eventTitleEl = document.createElement("p");
+    // eventTitleEl.classList = "genre";
+    // eventTitleEl.setAttribute("id", "eventName2");
+    // eventTitleEl.textContent = eventData[i].name;
         
         }
       //   showEvents()
