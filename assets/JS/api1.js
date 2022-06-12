@@ -29,6 +29,7 @@ var date = dateInputEl.value.trim();
     fetch(apiEvent)
         .then(response => response.json())
         .then(data => console.log(data));
+        showEvents()
             
         //update event details
         //nameEl = events.name;
@@ -52,33 +53,34 @@ var date = dateInputEl.value.trim();
 
 
 
-//event list code from website:
-function showEvents(json) {
-    var items = $('.is-outlined');
-    items.hide();
-    var events = json._embedded.events;
-    var item = items.first();
-    for (var i=0;i<events.length;i++) {
-      item.children('.event-name').text(events[i].name);
-      item.children('.event-date').text(events[i].dates.start.localDate);
-      try {
-        item.children('.description-1').text(events[i]._embedded.venues[0].name + " in " + events[i]._embedded.venues[0].city.name);
-      } catch (err) {
-        console.log(err);
-      }
-      item.show();
-      item.off("click");
-      item.click(events[i], function(eventObject) {
-        console.log(eventObject.data);
-        try {
-          getAttraction(eventObject.data._embedded.attractions[0].id);
-        } catch (err) {
-        console.log(err);
-        }
-      });
-      item=item.next();
-    }
-  }
+// //event list code from website:
+// function showEvents(json) {
+//     var items = $('.is-outlined');
+//     items.hide();
+//     var events = json._embedded.events;
+//     var item = items.first();
+//     for (var i=0;i<events.length;i++) {
+//       item.children('#eventName').text(events[i].name);
+//       item.children('.event-date').text(events[i].dates.start.localDate);
+//       try {
+//         item.children('.description-1').text(events[i]._embedded.venues[0].name + " in " + events[i]._embedded.venues[0].city.name);
+//       } catch (err) {
+//         console.log(err);
+//       }
+//       item.show();
+//       item.off("click");
+//       item.click(events[i], function(eventObject) {
+//         console.log(eventObject.data);
+//         try {
+//           getAttraction(eventObject.data._embedded.attractions[0].id);
+//         } catch (err) {
+//         console.log(err);
+//         }
+//       });
+//       item=item.next();
+//     }
+//   }
+// }
 
-
-  searchBtnEl.addEventListener("click", eventHandler);
+  searchBtnEl.addEventListener("click", eventHandler)
+}
