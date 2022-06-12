@@ -1,6 +1,6 @@
 * {
     font-size: large;
-    color: rgb(84, 139, 28);
+    color: white;
     padding: 10px;
 }
 
@@ -11,4 +11,5 @@
 
 .link:hover{
     background-color: aqua;
+    color: black;
 }
