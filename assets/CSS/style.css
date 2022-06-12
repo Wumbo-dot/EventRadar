@@ -1,0 +1,14 @@
+* {
+    font-size: large;
+    color: rgb(84, 139, 28);
+    padding: 10px;
+}
+
+.link{
+    background-color: black;
+    padding: 0;
+}
+
+.link:hover{
+    background-color: aqua;
+}
