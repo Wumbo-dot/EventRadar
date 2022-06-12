@@ -24,7 +24,7 @@ var eventHandler = function (event) {
 //,StartDateTime={}
 var getEventData = function (city1) {
     
-    console.log(city)
+    
     var apiEvent = "'https://app.ticketmaster.com/discovery/v2/events.json?city={}&apikey=kDANs259nX5PnjGOMkkA0AAh72DAKY2C&'" + city1 + '"';
 
     fetch(apiEvent)
