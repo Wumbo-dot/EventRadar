@@ -17,7 +17,7 @@ console.log(cityName);
     else {
         alert("Please enter a US city")
     }
-<<<<<<< HEAD
+
 
 };
 //,StartDateTime={}
@@ -25,12 +25,16 @@ var getEventData = function (city1) {
     
     
     var apiEvent = "'https://app.ticketmaster.com/discovery/v2/events.json?city={}&apikey=kDANs259nX5PnjGOMkkA0AAh72DAKY2C&'" + city1 + '"';
-=======
+
+>>>>>>> 986479ee334bd321219cfe870f2a540f4de1924b
 var date = dateInputEl.value.trim();
     console.log(date);
  
 var apiEvent = `https://app.ticketmaster.com/discovery/v2/events.json?city=${cityName},StartDateTime=${date}&apikey=kDANs259nX5PnjGOMkkA0AAh72DAKY2C`
+<<<<<<< HEAD
 >>>>>>> feature/Maria
+=======
+>>>>>>> 986479ee334bd321219cfe870f2a540f4de1924b
 
     fetch(apiEvent)
         .then(function (response) {
