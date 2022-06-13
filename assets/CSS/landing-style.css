@@ -56,4 +56,5 @@ body {
 
 button:hover{
     border: gray;
+    cursor: pointer;
 }
