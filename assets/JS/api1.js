@@ -48,16 +48,30 @@ var apiEvent = `https://app.ticketmaster.com/discovery/v2/events.json?city=${cit
          var eventGenre = eventData[i].classifications[0].genre.name;
          document.querySelector(".genre").innerText = "Genre: " + eventGenre;
 
-         //var eventSeating = eventData[i].url
+         var eventSeating = eventData[i].seatmap.staticUrl;
+       //  document.querySelector(".seating").src = eventSeating;
+         document.querySelector(".seating").innertext = "Seating: " + eventSeating
+         
 
          var eventDescription = eventData[i].info;
          document.querySelector(".description-1").innerText = "Description: " + eventDescription;
-
-         var eventPrice = eventData[i].priceRanges[0].min;
-         document.querySelector(".price").innerText = "Prices start at: " + eventPrice;
+//Need help with "reading'0' "
+       //  var eventPrice = eventData[i].priceRanges[0].min;
+        //  if (eventPrice === 0) {
+        //     document.querySelector(".price").innerText = "Prices start at: N/A";
+        //  }
+        //  document.querySelector(".price").innerText = "Prices start at: " + eventPrice;
 
          var eventTime = eventData[i].dates.start.localTime;
          document.querySelector(".eventTimes").innerText = "Time: " + eventTime;
+
+         var eventImage = eventData[i].images[1];
+         document.querySelector(".icon-2").src = eventImage;
+         //document.querySelector("icon-2").alt = '"Image of event"';
+
+         var eventUrl = eventData[i].url;
+         document.querySelector(".link").innertext = eventUrl;
+
 
 
 
