@@ -39,5 +39,5 @@ document.querySelector(".input").addEventListener("keyup", function (event) {
   }
 });
 $(function () {
-  $("#datepicker").datepicker();
+  $("#datepicker").datepicker({ minDate: 0 });
 });
