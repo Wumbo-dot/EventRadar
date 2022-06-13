@@ -1,7 +1,7 @@
 * {
-  font-size: large;
-  color: rgb(84, 139, 28);
-  padding: 10px;
+    font-size: large;
+    color: white;
+    padding: 10px;
 }
 
 .startButton:hover{
@@ -59,4 +59,11 @@
 img {
   padding: 5px;
 }
+.link:hover{
+    background-color: aqua;
+    color: black;
+}
 
+.input{
+    color: white;
+}
