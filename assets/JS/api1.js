@@ -66,12 +66,13 @@ var apiEvent = `https://app.ticketmaster.com/discovery/v2/events.json?city=${cit
          var eventDescription = eventData[i].info;
          document.querySelector(".description-1").innerText = "Description: " + eventDescription;
 //Need help with "reading'0' "
-       //  var eventPrice = eventData[i].priceRanges[0].min;
-        //  if (eventPrice === 0) {
-        //     document.querySelector(".price").innerText = "Prices start at: N/A";
-        //  }
-        //  document.querySelector(".price").innerText = "Prices start at: " + eventPrice;
-
+        
+         if (eventData[i].priceRanges === [""]) {
+            document.querySelector(".price").innerText = "Prices start at: N/A";
+         } else {
+            var eventPrice = eventData[i].priceRanges[0].min;
+            document.querySelector(".price").innerText = "Prices start at: " + eventPrice;
+        }
          var eventTime = eventData[i].dates.start.localTime;
          document.querySelector(".eventTimes").innerText = "Time: " + eventTime;
 
