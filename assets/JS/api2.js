@@ -18,7 +18,7 @@ var weather = {
     console.log(name, icon, description, temp, humidity, speed);
     document.querySelector(".city").innerText = "Weather in " + name;
     document.querySelector(".icon").src =
-      "https://openweathermap.org/img/wn/" + icon + ".png";
+      "https://openweathermap.org/img/wn/" + icon + "@2x.png";
     document.querySelector(".description").innerText =
       "Description:" + description + "";
     document.querySelector(".temp").innerText = "Temp: " + temp + "°C";
@@ -39,5 +39,5 @@ document.querySelector(".input").addEventListener("keyup", function (event) {
   }
 });
 $(function () {
-  $("#datepicker").datepicker();
+  $("#datepicker").datepicker({ minDate: 0 });
 });
