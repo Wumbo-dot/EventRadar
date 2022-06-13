@@ -1,16 +1,23 @@
 * {
-    font-size: large;
-    color: rgb(84, 139, 28);
-    padding: 10px;
+  font-size: large;
+  color: rgb(84, 139, 28);
+  padding: 10px;
 }
 
-.link{
-    background-color: black;
-    padding: 0;
+.link {
+  background-color: black;
+  padding: 0;
 }
 
-.link:hover{
-    background-color: limegreen;
-    cursor: pointer;
+.link:hover {
+  background-color: limegreen;
+  cursor: pointer;
 }
 
+.icon {
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
+  height: 5.9rem;
+  width: 5.9rem;
+}
