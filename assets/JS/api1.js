@@ -55,20 +55,27 @@ var apiEvent = `https://app.ticketmaster.com/discovery/v2/events.json?city=${cit
 
          var eventDescription = eventData[i].info;
          document.querySelector(".description-1").innerText = "Description: " + eventDescription;
-//Need help with "reading'0' "
+
+//Need help with "reading'0' " test code:
+
+//var eventPrice = eventData[i]?.priceRanges[0]?.min
         
-         if (eventData[i].priceRanges === [""]) {
-            document.querySelector(".price").innerText = "Prices start at: N/A";
-         } else {
-            var eventPrice = eventData[i].priceRanges[0].min;
-            document.querySelector(".price").innerText = "Prices start at: " + eventPrice;
-        }
+        //  if (eventData[i].priceRanges === 0) {
+        //     document.querySelector(".price").innerText = "Prices start at: N/A";
+        //  } else {
+            //document.querySelector(".price").innerText = "Prices start at: " + eventPrice;
+        // end of help section
+
          var eventTime = eventData[i].dates.start.localTime;
          document.querySelector(".eventTimes").innerText = "Time: " + eventTime;
 
          var eventImage = eventData[i].images[1];
-         document.querySelector(".icon-2").src = eventImage;
-         //document.querySelector("icon-2").alt = '"Image of event"';
+         var eventImageEl = document.getElementsByClassName("icon-2")
+         var eventImageEl = document.createElement("img")
+         eventImageEl.src = 'eventImage'
+            .appendChild(eventImage)
+       // document.querySelector(".icon-2").src = eventImage;
+        //  document.querySelector("icon-2").alt = '"Image of event"';
 
          var eventUrl = eventData[i].url;
          document.querySelector(".link").innertext = eventUrl;
