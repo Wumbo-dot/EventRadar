@@ -4,13 +4,20 @@
   padding: 10px;
 }
 
+.startButton:hover{
+    background-color: limegreen;
+    color: black;
+
+}
+
 .link {
   background-color: black;
-  padding: 0;
+  padding: 5px;
 }
 
 .link:hover {
   background-color: limegreen;
+  color: black;
   cursor: pointer;
 }
 
