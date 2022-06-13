@@ -11,9 +11,14 @@
 
 .link:hover{
     background-color: aqua;
+<<<<<<< HEAD
     color: black;
 }
 
 .input{
     color: white;
 }
+=======
+}
+
+>>>>>>> develop
