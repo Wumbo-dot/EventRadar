@@ -10,5 +10,7 @@
 }
 
 .link:hover{
-    background-color: aqua;
+    background-color: limegreen;
+    cursor: pointer;
 }
+
