@@ -24,21 +24,24 @@ body {
 .main {
     align-items: center;
     text-align: center;
-    border: 10px solid #d9ff00;
+    border: 1px solid #d9ff00;
     background-color: #0000;
     padding-top: 100;
-    margin: auto auto auto auto;
-    padding: 30px 30px 30px 30px;
-    color: white;
+    margin: auto;
+    font-size: large;
+    color: rgb(84, 139, 28);
     width: 50;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    border-radius: 15px;
+    border-radius: 1;
+    box-shadow: 0 0.5em 1em -0.125em rgb(255 255 255 / 10%), 0 0 0 1px rgb(255 255 255 / 2%);
 }
+
+
 
 .button {
         background-color: #080808;
         border-color: #d9ff00;
-        border-width: 3px;
+        border-width: 1px;
         color: #d2d2d2;
         cursor: pointer;
         justify-content: center;
@@ -50,11 +53,24 @@ body {
 }
 
 .appDescription{
-    border: solid thick #d9ff00;
+    /*
+    border: solid #d9ff00;
+    border-width: 1px;
+    border-radius: 10px;
+    */
     padding: 0;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 button:hover{
     border: gray;
     cursor: pointer;
+    
+}
+
+.button {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
