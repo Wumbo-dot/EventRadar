@@ -10,6 +10,8 @@ body {
     background-color: black;
     transform: scale(1.0);
     background-position: center center;
+    padding-top: 220px;
+    overflow: none;
 }
 .TitleName {
     font-family: fantasy;
@@ -20,7 +22,6 @@ body {
 }
 
 .main {
-
     align-items: center;
     text-align: center;
     border: 10px solid #d9ff00;
@@ -37,7 +38,6 @@ body {
 .button {
         background-color: #080808;
         border-color: #d9ff00;
-        
         border-width: 3px;
         color: #d2d2d2;
         cursor: pointer;
@@ -49,11 +49,11 @@ body {
         white-space: nowrap;
 }
 
-.pbutton{
-    padding: 10px;
-}
-
 .appDescription{
     border: solid thick #d9ff00;
-    padding: auto 0 auto 0;
+    padding: 0;
+}
+
+button:hover{
+    border: gray;
 }
