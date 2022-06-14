@@ -78,16 +78,17 @@ var getEventData = function (city1) {
          var eventUrlEl = document.createElement('div')
          eventUrlEl.setAttribute('class', ".link-event") = document.
          document.querySelector(".link").src = eventUrl;
-
+    
         // eventNameEl.textcontent = eventsName;
 
         //       var eventTitleEl = document.createElement("p");
         // eventTitleEl.classList = "genre";
         // eventTitleEl.setAttribute("id", "eventName2");
         // eventTitleEl.textContent = eventData[i].name;
-      }
+      
       //showEvents()
-    });
+});
 };
+    
 
 searchBtnEl.addEventListener("click", eventHandler);
