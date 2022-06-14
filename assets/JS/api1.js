@@ -13,13 +13,13 @@ var eventHandler = function (event) {
     var cityName = cityInputEl.value.trim();
     console.log(cityName);
     if (cityName) {
-        getEventData(cityName);
+       // getEventData(cityName);
     } else {
         alert("Please enter a US city");
     }
 };
-//,StartDateTime={}
-var getEventData = function (cityName) {
+
+//var getEventData = function (cityName) {
     
     var date = dateInputEl.value.trim();
     console.log(date);
@@ -96,6 +96,6 @@ var getEventData = function (cityName) {
             }
                 //showEvents()
             });
-};
+
 
 searchBtnEl.addEventListener("click", eventHandler);
