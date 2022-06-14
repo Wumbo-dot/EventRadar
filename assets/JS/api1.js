@@ -5,6 +5,7 @@ var cityInputEl = document.querySelector(".input");
 var dateInputEl = document.querySelector(".input-2");
 var eventContainerEl = document.querySelector(".event-container");
 var eventNameEl = document.getElementById("eventName");
+var eventSeatingEl = document.querySelector(".seating");
 
 //capture city and date for api search
 var eventHandler = function (event) {
@@ -45,15 +46,16 @@ var apiEvent = `https://app.ticketmaster.com/discovery/v2/events.json?city=${cit
          var eventDate = eventData[i].dates.start.localDate;
          document.querySelector(".event-date").innerText = "Date: " + eventDate;        
 
-         var eventGenre = eventData[i].classifications[0].genre.name;
-         document.querySelector(".genre").innerText = "Genre: " + eventGenre;
+        //  var eventGenre = eventData[i].classifications[0].genre.name;
+        //  document.querySelector(".genre").innerText = "Genre: " + eventGenre;
 
          var eventSeating = eventData[i].seatmap.staticUrl;
-       //  document.querySelector(".seating").src = eventSeating;
-         document.querySelector(".seating").innertext = "Seating: " + eventSeating
+        var eventSeatingEl = document.getElementsByClassName("seating")
+        var eventSeatingEl = document.createElement("img")
+         document.querySelector(".seating").src = eventSeating;
          
 
-         var eventDescription = eventData[i].info;
+         var eventDescription = eventData[i].type;
          document.querySelector(".description-1").innerText = "Description: " + eventDescription;
 
 //Need help with "reading'0' " test code:
@@ -69,16 +71,16 @@ var apiEvent = `https://app.ticketmaster.com/discovery/v2/events.json?city=${cit
          var eventTime = eventData[i].dates.start.localTime;
          document.querySelector(".eventTimes").innerText = "Time: " + eventTime;
 
-         var eventImage = eventData[i].images[1];
+         var eventImage = eventData[i].images[i].url;
          var eventImageEl = document.getElementsByClassName("icon-2")
          var eventImageEl = document.createElement("img")
-         eventImageEl.src = 'eventImage'
-            .appendChild(eventImage)
-       // document.querySelector(".icon-2").src = eventImage;
-        //  document.querySelector("icon-2").alt = '"Image of event"';
+         document.querySelector(".icon-2").src = eventImage;
+        
 
          var eventUrl = eventData[i].url;
-         document.querySelector(".link").innertext = eventUrl;
+         var eventUrlEl = document.createElement('div')
+         eventUrlEl.setAttribute('class', ".link-event") = document.
+         document.querySelector(".link").src = eventUrl;
 
 
 
