@@ -1,4 +1,4 @@
-//var nokeyapi = "https://app.ticketmaster.com/discovery/v2/events?apikey=7elxdku9GGG5k8j0Xm8KWdANDgecHMV0&locale=" + city; 
+//var nokeyapi = "https://app.ticketmaster.com/discovery/v2/events?apikey=7elxdku9GGG5k8j0Xm8KWdANDgecHMV0&locale=" + city;
 
 var searchBtnEl = document.querySelector(".button");
 var cityInputEl = document.querySelector(".input");
@@ -9,42 +9,39 @@ var eventSeatingEl = document.querySelector(".seating");
 
 //capture city and date for api search
 var eventHandler = function (event) {
-    event.preventDefault();
-var cityName = cityInputEl.value.trim(); 
-console.log(cityName);
-    if (cityName) {
- //getEventData(cityName);
-    }
-    else {
-        alert("Please enter a US city")
-    }
-var date = dateInputEl.value.trim();
-    console.log(date);
- 
-var apiEvent = `https://app.ticketmaster.com/discovery/v2/events.json?city=${cityName},StartDateTime=${date}&apikey=kDANs259nX5PnjGOMkkA0AAh72DAKY2C`
+  event.preventDefault();
+  var cityName = cityInputEl.value.trim();
+  console.log(cityName);
+  if (cityName) {
+    //getEventData(cityName);
+  } else {
+    alert("Please enter a US city");
+  }
+};
+//,StartDateTime={}
+var getEventData = function (city1) {
+  var apiEvent =
+    "'https://app.ticketmaster.com/discovery/v2/events.json?city={}&apikey=kDANs259nX5PnjGOMkkA0AAh72DAKY2C&'" +
+    city1 +
+    '"';
+  var date = dateInputEl.value.trim();
+  console.log(date);
 
-    fetch(apiEvent)
-        .then(function (response) {
-          return response.json();
-        } )
-        .then(function (data) {
-          var eventData = data._embedded.events;
-          console.log(eventData); 
+  var apiEvent = `https://app.ticketmaster.com/discovery/v2/events.json?city=${cityName},StartDateTime=${date}&apikey=kDANs259nX5PnjGOMkkA0AAh72DAKY2C`;
 
-       //showEvents = function (eventData) {
-         if (eventData.length === 0) {
-         eventNameEl.textContent = "No events found - Enjoy the weather!";
-          return;
-           }
-              
-        for (var i=0;i< eventData.length; i++) {
-         
-         console.log(eventsName);
-         var eventsName = eventData[i].name;
-         document.querySelector("#eventName").innerText = "Event: " + eventsName;
+  fetch(apiEvent)
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
+      var eventData = data._embedded.events;
+      console.log(eventData);
 
-         var eventDate = eventData[i].dates.start.localDate;
-         document.querySelector(".event-date").innerText = "Date: " + eventDate;        
+      //showEvents = function (eventData) {
+      if (eventData.length === 0) {
+        eventNameEl.textContent = "No events found - Enjoy the weather!";
+        return;
+      }
 
         //  var eventGenre = eventData[i].classifications[0].genre.name;
         //  document.querySelector(".genre").innerText = "Genre: " + eventGenre;
@@ -82,23 +79,15 @@ var apiEvent = `https://app.ticketmaster.com/discovery/v2/events.json?city=${cit
          eventUrlEl.setAttribute('class', ".link-event") = document.
          document.querySelector(".link").src = eventUrl;
 
-
-
-
-       
-          
         // eventNameEl.textcontent = eventsName;
 
-    //       var eventTitleEl = document.createElement("p");
-    // eventTitleEl.classList = "genre";
-    // eventTitleEl.setAttribute("id", "eventName2");
-    // eventTitleEl.textContent = eventData[i].name;
-        
-        }
-        //showEvents()
+        //       var eventTitleEl = document.createElement("p");
+        // eventTitleEl.classList = "genre";
+        // eventTitleEl.setAttribute("id", "eventName2");
+        // eventTitleEl.textContent = eventData[i].name;
+      }
+      //showEvents()
+    });
+};
 
-    })
-  
- };
-
-  searchBtnEl.addEventListener("click", eventHandler)
+searchBtnEl.addEventListener("click", eventHandler);
