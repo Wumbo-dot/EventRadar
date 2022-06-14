@@ -85,7 +85,7 @@ var getEventData = function (city1) {
         // eventTitleEl.classList = "genre";
         // eventTitleEl.setAttribute("id", "eventName2");
         // eventTitleEl.textContent = eventData[i].name;
-      }
+    
       //showEvents()
     });
 };
