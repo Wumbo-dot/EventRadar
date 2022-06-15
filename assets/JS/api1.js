@@ -52,6 +52,7 @@ var getEventData = function (cityName) {
         var eventSeating = eventData[i].seatmap.staticUrl;
         console.log(eventSeating);
         var eventSeatingEl = document.getElementsByClassName("seating");
+        eventSeatingEl .setAttribute("target=","_blank");
         document.querySelector(".seating").href = eventSeating;
 
         var eventDescription = eventData[i].type;
@@ -67,6 +68,7 @@ var getEventData = function (cityName) {
         document.querySelector(".icon-2").src = eventImage;
 
         var eventUrl = eventData[i].url;
+        
         document.querySelector(".event-link").href = eventUrl; //`href=${eventUrl}`;
 
         //add data to cards
