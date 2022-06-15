@@ -39,9 +39,9 @@ var getEventData = function (cityName) {
                 return;
             }
             for (var i = 0; i < eventData.length; i++) {
-
+               
                 console.log(eventsName);
-                var eventsName = eventData[i].name;
+                var eventsName = eventData[i+1].name;
                 document.querySelector("#eventName").innerText = "Event: " + eventsName;
 
                 var eventDate = eventData[i].dates.start.localDate;
@@ -78,7 +78,40 @@ var getEventData = function (cityName) {
                 //add data to cards
 
                 // var pageHandler = function(pageBtnEl) {
-
+                    // main.innerhtml=htmlstring "<div></div>"
+    //                 var eventsNamePg = eventData[i+1].name;
+    //                 document.querySelector("#eventName").innerText = "Event: " + eventsName;
+    
+    //                 var eventDate = eventData[i].dates.start.localDate;
+    //                 document.querySelector(".event-date").innerText = "Date: " + eventDate;
+    
+    //                 var eventGenre = eventData[i].classifications[0].genre.name;
+    //                 document.querySelector(".genre").innerText = "Genre: " + eventGenre;
+    
+    
+    // //remove not working
+    //                var eventSeating = eventData[i].seatmap.staticUrl;
+    //                var eventSeatingEl = document.getElementsByClassName("seating")
+    //                var eventSeatingEl = setAttribute(_target.blank)
+    //                document.querySelector(".seating").href = eventSeating;
+    
+    
+    //                 var eventDescription = eventData[i].type;
+    //                 document.querySelector(".description-1").innerText = "Description: " + eventDescription;
+    
+    
+    //                 var eventTime = eventData[i].dates.start.localTime;
+    //                 document.querySelector(".eventTimes").innerText = "Time: " + eventTime;
+    
+    //                 var eventImage = eventData[i].images[i].url;
+    //                 var eventImageEl = document.getElementsByClassName("icon-2")
+    //                 var eventImageEl = document.createElement("img")
+    //                 document.querySelector(".icon-2").src = eventImage;
+    
+    
+    //                 var eventUrl = eventData[i].url;
+    //                 document.querySelector(".event-link").href = eventUrl; //`href=${eventUrl}`;
+    
 
                 // }
                 //pageBtnEl.addEventListener("click", pageHandler);
