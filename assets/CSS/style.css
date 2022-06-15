@@ -54,17 +54,19 @@
 .genre {
   padding: 10px;
 }
+
 .seating {
   padding: 10px;
 }
+
 img {
   padding: 5px;
 }
 .link:hover{
-    background-color: aqua;
-    color: black;
+  background-color: aqua;
+  color: black;
 }
 
 .input{
-    color: white;
+  color: white;
 }
