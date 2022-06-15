@@ -17,7 +17,13 @@ var eventHandler = function (event) {
     alert("Please enter a US city");
   }
 };
-
+function createItem() {
+  localStorage.setItem("city", cityName);
+}
+function readValue() {
+  var saveCity = localStorage.getItem("city");
+  document.getElementById("input").createElement("p").innerText = saveCity;
+}
 var getEventData = function (cityName) {
   var date = dateInputEl.value.trim();
   console.log(date);
@@ -72,8 +78,8 @@ var getEventData = function (cityName) {
         document.querySelector(".event-link").innerText = " Purchase Tickets";
         document.querySelector(".event-link").href = eventUrl; 
         first_iteration = false
-     
-      };   
+     }
+       
       
     }} 
       
