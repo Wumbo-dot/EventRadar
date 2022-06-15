@@ -32,13 +32,14 @@ var getEventData = function (cityName) {
       var eventData = data._embedded.events;
       console.log(eventData);
 
-      //showEvents = function (eventData) {
+     // showEvents = function (eventData) {
       if (eventData.length === 0) {
         eventNameEl.textContent = "No events found - Enjoy the weather!";
         return;
       }
       for (var i = 0; i < eventData.length; i++) {
         console.log(eventsName);
+
         var eventsName = eventData[i].name;
         document.querySelector("#eventName").innerText = "Event: " + eventsName;
 
@@ -72,8 +73,11 @@ var getEventData = function (cityName) {
         document.querySelector(".event-link").href = eventUrl; //`href=${eventUrl}`;
 
         //add data to cards
-        //pageBtnEl.addEventListener("click", pageHandler);
-      }
+
+      };
+
+        pageBtnEl.addEventListener("click", showEvents);
+     // }
       //showEvents()
     });
 };
