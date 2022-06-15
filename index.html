@@ -2,17 +2,22 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/trontastic/jquery-ui.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/bulmaswatch/nuclear/bulmaswatch.min.css">
-    <link rel="stylesheet" href="./assets/CSS/style.css">
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/trontastic/jquery-ui.css" />
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css" />
+      <link rel="stylesheet" href="https://unpkg.com/bulmaswatch/nuclear/bulmaswatch.min.css" />
+      <link rel="stylesheet" href="./assets/CSS/style.css" />
 </head>
 
 <body>
+<<<<<<< HEAD
+      <div class="container is-fullhd">
+            <h1 class="title is-1 align-items-center">Event Radar</h1>
+            <div class="start"></div>
+=======
     <div class="container is-fullhd">
         <h1 class="title is-1 align-items-center">Event Radar</h1>
         <div class="start"></div>
@@ -55,12 +60,56 @@
                         <a href="https://www.ticketmaster.com">
                             <button class="link is-responsive">Click Here To Visit Ticketmaster</button>
                         </a>
+>>>>>>> d4c69df84a7579b03c689538b623778393c5b4cf
 
+            <p class="is-responsive"></p>
+            <div></div>
+      </div>
+      <div class="block">
+            <div class="box">
+                  <p class="is-1">City</p>
+                  <input type="text" class="input" placeholder="Enter A City" />
 
+                  <p class="is-1">Date</p>
+                  <input type="text" id="datepicker" class="input-2" placeholder="Enter A Date" />
+                  <br />
+                  <br />
+                  <button class="link is-responsive startButton">Start Here</button>
+            </div>
 
-                        <br>
-                        <br>
+            <section class="columns event-container">
+                  <div class="column is-half is-outlined">
+                        <article class="card">
+                              <div class="is-outlined">
+                                    <p id="eventName">Current Event</p>
+                                    <br />
+                                    <h2 class="event-date">Event Date</h2>
+                                    <br />
+                                    <h2 class="genre">Genre</h2>
+                                    <br />
+                                    <a href="" class="seating">Seating</a>
+                                    <br />
+                                    <div class="description-1">Description</div>
+                                    <br />
+                                    <div class="price">Price</div>
+                                    <br />
+                                    <div class="eventTimes">Times</div>
+                                    <br />
+                                    <img class="icon-2" src="" alt="" />image
+                                    <br />
+                                    <a href="" class="event-link">event</a>
+                                    <br />
+                                    <br />
+                                    <a href="https://www.ticketmaster.com">
+                                          <button class="link is-responsive">
+                                                Click Here To Visit Ticketmaster
+                                          </button>
+                                    </a>
 
+<<<<<<< HEAD
+                                    <br />
+                                    <br />
+=======
                         <nav class="pagination">
                             <a href="" class="pagination-previous" disabled>Previous</a>
                             <a href="" class="pagation-next">Next Page</a>
@@ -90,33 +139,60 @@
                     <article class="card">
                         <div class="is-outlined">
                             <p>Current Weather</p>
+>>>>>>> d4c69df84a7579b03c689538b623778393c5b4cf
 
-                            <br>
-                            <h2 class="city">
-                                City
-                            </h2>
-                            <br>
-                            <h1 class="temp">Temp</h1>
-                            <br>
-                            <div class="description">Description</div>
-                            <br>
-                            <div class="humidity">Humidity</div>
-                            <br>
-                            <div class="wind">Wind</div>
-                            <br>
-                            <img srt="" alt="" class="icon" />
+                                    <nav class="pagination">
+                                          <a href="" class="pagination-previous" disabled>Previous</a>
+                                          <a href="" class="pagation-next">Next Page</a>
+                                          <ul class="pagination-list">
+                                                <li>
+                                                      <button class="pagination-link is-current" id="page-1">
+                                                            1
+                                                      </button>
+                                                      <button class="pagination-link" id="page-2">2</button>
+                                                      <button class="pagination-link" id="page-3">3</button>
+                                                      <a href="" class="pagination-link" id="page-4">4</a>
+                                                      <a href="" class="pagination-link" id="page-5">5</a>
+                                                      <a href="" class="pagination-link" id="page-6">6</a>
+                                                      <a href="" class="pagination-link" id="page-7">7</a>
+                                                      <a href="" class="pagination-link" id="page-8">8</a>
+                                                      <a href="" class="pagination-link" id="page-9">9</a>
+                                                      <a href="" class="pagination-link" id="page-10">10</a>
+                                                </li>
+                                          </ul>
+                                    </nav>
+                              </div>
+                        </article>
+                  </div>
+                  <div class="column is-half">
+                        <div class="weather-container is-outlined">
+                              <article class="card">
+                                    <div class="is-outlined">
+                                          <p>Current Weather</p>
 
+                                          <br />
+                                          <h2 class="city">City</h2>
+                                          <br />
+                                          <h1 class="temp">Temp</h1>
+                                          <br />
+                                          <div class="description">Description</div>
+                                          <br />
+                                          <div class="humidity">Humidity</div>
+                                          <br />
+                                          <div class="wind">Wind</div>
+                                          <br />
+                                          <img srt="" alt="" class="icon" />
+                                    </div>
+                              </article>
                         </div>
-                    </article>
-                </div>
-            </div>
-        </section>
+                  </div>
+            </section>
 
-        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-        <script src="./assets/JS/api1.js"></script>
-        <script src="./assets/JS/api2.js"></script>
-    </div>
+            <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+            <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+            <script src="./assets/JS/api1.js"></script>
+            <script src="./assets/JS/api2.js"></script>
+      </div>
 </body>
 
 </html>
