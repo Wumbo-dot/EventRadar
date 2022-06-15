@@ -1,0 +1,61 @@
+*{
+    margin-top: 200px;
+
+}
+
+.head {
+    background-image: url(../Images/backg.jpg);
+}
+
+body {
+    background-color: black;
+    transform: scale(1.0);
+    background-position: center center;
+    padding-top: 220px;
+    overflow: none;
+}
+.TitleName {
+    font-family: fantasy;
+    text-align: center;
+    color: #d9ff00;
+    font-size: 100px;
+    text-decoration: underline;
+}
+
+.main {
+    align-items: center;
+    text-align: center;
+    border: 10px solid #d9ff00;
+    background-color: #0000;
+    padding-top: 100;
+    margin: auto auto auto auto;
+    padding: 30px 30px 30px 30px;
+    color: white;
+    width: 50;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+}
+
+.button {
+        background-color: #080808;
+        border-color: #d9ff00;
+        border-width: 3px;
+        color: #d2d2d2;
+        cursor: pointer;
+        justify-content: center;
+        padding-bottom: calc(0.5em - 1px);
+        padding-left: 1em;
+        padding-right: 1em;
+        text-align: center;
+        white-space: nowrap;
+}
+
+.appDescription{
+    border: solid thick #d9ff00;
+    padding: 0;
+}
+
+button:hover{
+    border: gray;
+    cursor: pointer;
+}
