@@ -7,19 +7,20 @@ AS A person who travels a lot, I WANT TO be able to search where i am going, SO 
 
 ## Table of Contents
 
-- INTRO
-- [Description ]()
-- [BUILT WITH](#built)
--
-- FEATURES
-- PREVIEW
-- HELPFUL LINKS
+- [Intro](#Intro)
+- [Description ](#desc)
+- [Built With](#built)
+- [Features](#feat)
+- [Preview](#Preview)
+- [Helpful Links](#Links)
+
+<a name ="Intro"></a>
+
+## Intro
+
+<a name ="Desc"></a>
 
 ## Description
-
-## Preview
-
-[First page of Event Radar ]()
 
 <a name ="built"></a>
 
@@ -33,6 +34,18 @@ AS A person who travels a lot, I WANT TO be able to search where i am going, SO 
 - Moment.js
 - OpenWeather API
 - TicketMaster API
+
+<a name ="Feat"></a>
+
+## Features
+
+<a name ="Preview"></a>
+
+## Preview
+
+[First page of Event Radar ]()
+
+<a name ="Links"></a>
 
 ## Helpful Links : link:
 
