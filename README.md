@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Event Radar
 
 ## Purpose
@@ -84,3 +85,6 @@ https://wumbo-dot.github.io/EventRadar/
 - [Bulma styling for columns and class names ](https://bulma.io/documentation/columns/sizes/)
 - [TicketMaster API ](https://developer.ticketmaster.com/products-and-docs/apis/getting-started/)
 - [OpenWeather API ](https://openweathermap.org/api)
+=======
+### Event Radar
+>>>>>>> a4f8a1e9ae83fba8b79b76ac0ca5e2e9a5af2e8a
