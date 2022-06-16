@@ -51,27 +51,27 @@ var getEventData = function (cityName) {
       var first_iteration = true;
       for (var i = 0; i < eventData.length; i++) {
         console.log(eventsName);
-         
+      // Add returned data to page   
       if (first_iteration) {
         var eventsName = eventData[i].name;
-        document.querySelector("#eventName").innerText += "Event: " + eventsName;
+        document.querySelector("#eventName").innerText = "Event: " + eventsName;
 
         var eventDate = eventData[i].dates.start.localDate;
-        document.querySelector(".event-date").innerText += "Date: " + eventDate;
+        document.querySelector(".event-date").innerText = "Date: " + eventDate;
 
         var eventGenre = eventData[i].classifications[0].genre.name;
-        document.querySelector(".genre").innerText += "Genre: " + eventGenre;
+        document.querySelector(".genre").innerText = "Genre: " + eventGenre;
 
         var eventSeating = eventData[i].seatmap.staticUrl;
         document.querySelector(".seating").innerText = "View Seating Chart";
-        document.querySelector(".seating").href += eventSeating;
+        document.querySelector(".seating").href = eventSeating;
 
         var eventDescription = eventData[i].type;
         document.querySelector(".description-1").innerText = "";
-          // "Description: " + eventDescription;
+        
 
         var eventTime = eventData[i].dates.start.localTime;
-        document.querySelector(".eventTimes").innerText += "Time: " + eventTime;
+        document.querySelector(".eventTimes").innerText = "Time: " + eventTime;
 
         var eventImage = eventData[i].images[i].url;
         var eventImageEl = document.getElementsByClassName("icon-2");
@@ -80,10 +80,19 @@ var getEventData = function (cityName) {
 
         var eventUrl = eventData[i].url;
         document.querySelector(".event-link").innerText = " Purchase Tickets";
-        document.querySelector(".event-link").href += eventUrl; 
+        document.querySelector(".event-link").href = eventUrl; 
         first_iteration = false
      }
-       
+     function newInfoHandler() {
+              var app = document.querySelector(".card")
+              var container = document.createElement("div")
+              app.setAttribute("class", "card")
+              app.appendChild(container)
+              app.appendChild(eventsName)
+              app.appendChild(eventDate)  
+     }
+        pageBtnEl.addEventListener("click", newInfoHandler);
+     
       
     }} 
       
