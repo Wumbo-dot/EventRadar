@@ -1,13 +1,19 @@
 * {
-  font-size: large;
-  color: rgb(84, 139, 28);
-  padding: 10px;
+    font-size: large;
+    color: white;
+    padding: 10px;
 }
 
 .startButton:hover{
     background-color: limegreen;
     color: black;
 
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .link {
@@ -29,7 +35,8 @@
   width: 5.9rem;
 }
 .card p {
-  border: 2px solid lime;
+  border: 2px solid #d9ff00;
+  border-width: thin;
   margin: 10px;
   padding: 10px;
   font-weight: bolder;
@@ -47,9 +54,28 @@
 .genre {
   padding: 10px;
 }
+
 .seating {
   padding: 10px;
 }
+
 img {
   padding: 5px;
+}
+.link:hover{
+  background-color: aqua;
+  color: black;
+}
+
+.input{
+  color: white;
+}
+
+.card1{
+  margin: 6px;
+}
+
+#datepicker.input-2{
+ background-color: black;
+ color: white;
 }
