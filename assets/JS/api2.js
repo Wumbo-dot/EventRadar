@@ -1,3 +1,4 @@
+//get weather api, variable//
 var weather = {
   apiKey: "59e7c2fec0a7dcc3a2ab7131590e50bb",
   fetchWeather: function (city) {
@@ -10,6 +11,7 @@ var weather = {
       .then((response) => response.json())
       .then((data) => this.displayWeather(data));
   },
+  //Display weather function//
   displayWeather: function (data) {
     var { name } = data;
     var { icon, description } = data.weather[0];
@@ -30,14 +32,17 @@ var weather = {
     this.fetchWeather(document.querySelector(".input").value);
   },
 };
+//event listener when click button//
 document.querySelector(".box button").addEventListener("click", function () {
   weather.search();
 });
+//event listener for when pressing enter//
 document.querySelector(".input").addEventListener("keyup", function (event) {
   if (event.key === "Enter") {
     weather.search();
   }
 });
+//moment js datepicker//
 $(function () {
   $("#datepicker").datepicker({ minDate: 0 });
 });
