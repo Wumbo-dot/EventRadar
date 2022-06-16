@@ -13,10 +13,12 @@
 </head>
 
 <body>
+    <!--Title for Event Radar-->
     <div class="container is-fullhd">
         <h1 class="title is-1 align-items-center">Event Radar</h1>
         <div class="start"></div>
 
+<!-- Search Container for Search bar-->
         <p class="is-responsive"></p>
         <div></div>
     </div>
@@ -27,9 +29,11 @@
             <p class="is-1">Date</p><input type="text" id="datepicker" class="input-2" placeholder="Enter A Date">
             <br>
             <br>
+
+            <!--Start button to get the party started-->
             <button class="link is-responsive startButton">Start Here</button>
         </div>
-
+<!--Events go here when searched-->
         <section class="columns event-container">
             <div class="column is-half is-outlined">
                 <article class="card card1">
@@ -40,6 +44,7 @@
                         <br>
                         <h2 class="genre">Genre</h2>
                         <br>
+                        <!--open seating chart in a new tab to allow for user viewing-->
                         <a href="" class="seating" target="_blank">Seating</a>
                         <br>
                         <br>
@@ -49,9 +54,11 @@
                         <br>
                         <img class="icon-2" src="" alt="">
                         <br>
+                        <!--open event chart in a new tab to allow for user viewing-->
                         <a href ="" class="event-link" target="_blank">event</a>
                         <br>
                         <br>
+                        <!--link to the main ticketmaster url for user to search-->
                         <a href="https://www.ticketmaster.com">
                             <button class="link is-responsive">Click Here To Visit Ticketmaster</button>
                         </a>
@@ -59,10 +66,10 @@
 
                                     <br />
                                     <br />
-
+<!--for version 2.0 to allow for new pages of events to display-->
                                     <nav class="pagination">
                                           <a href="" class="pagination-previous" disabled>Previous Page</a>
-                                          <a href="" class="button page-button" id="next-page">Next Page</a>
+                                          <button class="button page-button" id="next-page">Next Page</a>
                                           <ul class="pagination-list">
                                                 
                                           </ul>
@@ -70,6 +77,7 @@
                               </div>
                         </article>
                   </div>
+                  <!--display the city weather that user searches for-->
                   <div class="column is-half">
                         <div class="weather-container is-outlined">
                               <article class="card">
