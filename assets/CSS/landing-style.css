@@ -1,5 +1,6 @@
 *{
     margin-top: 200px;
+    background-color: black;
 
 }
 
@@ -28,7 +29,7 @@ body {
     border: 1px solid #d9ff00;
     background-color: #0000;
     padding-top: 100;
-    margin: auto;
+    margin-left: 500px;
     font-size: large;
     color: rgb(84, 139, 28);
     width: 50;
@@ -74,4 +75,8 @@ button:hover{
 .button {
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+html{
+    background-color: black;
 }
