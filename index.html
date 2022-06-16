@@ -1,112 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-      <meta charset="UTF-8" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/trontastic/jquery-ui.css" />
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css" />
-      <link rel="stylesheet" href="https://unpkg.com/bulmaswatch/nuclear/bulmaswatch.min.css" />
-      <link rel="stylesheet" href="./assets/CSS/style.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/bulmaswatch/nuclear/bulmaswatch.min.css"> 
+    <link rel="stylesheet" href="./assets/CSS/landing-style.css" />
+
+    <title>Event Radar</title>
 </head>
 
 <body>
-    <!--Title for Event Radar-->
-    <div class="container is-fullhd">
-        <h1 class="title is-1 align-items-center">Event Radar</h1>
-        <div class="start"></div>
-
-<!-- Search Container for Search bar-->
-        <p class="is-responsive"></p>
-        <div></div>
+    <div class="main" style='width: 1000px'>
+    <h1 class="TitleName">Event Radar</h1>
+        <p class="appDescription" style='width: 600px'>Event radar is the perfect going out tool.
+            <br>It will provide weather updates and events of any given location.
+        </p>
+        <a href="./Landing.html" class="button">Start Here</a>
+    
     </div>
-    <div class="block">
-        <div class="box">
-            <p class="is-1">City</p><input type="text" class="input" placeholder="Enter A City">
-
-            <p class="is-1">Date</p><input type="text" id="datepicker" class="input-2" placeholder="Enter A Date">
-            <br>
-            <br>
-
-            <!--Start button to get the party started-->
-            <button class="link is-responsive startButton">Start Here</button>
-        </div>
-<!--Events go here when searched-->
-        <section class="columns event-container">
-            <div class="column is-half is-outlined">
-                <article class="card card1">
-                    <div class="is-outlined">
-                        <p id="eventName">Current Event</p>
-                        <br>
-                        <h2 class="event-date">Event Date</h2>
-                        <br>
-                        <h2 class="genre">Genre</h2>
-                        <br>
-                        <!--open seating chart in a new tab to allow for user viewing-->
-                        <a href="" class="seating" target="_blank">Seating</a>
-                        <br>
-                        <br>
-                        <div class="description-1">Description</div>
-                        <br>
-                        <div class="eventTimes">Times</div>
-                        <br>
-                        <img class="icon-2" src="" alt="">
-                        <br>
-                        <!--open event chart in a new tab to allow for user viewing-->
-                        <a href ="" class="event-link" target="_blank">event</a>
-                        <br>
-                        <br>
-                        <!--link to the main ticketmaster url for user to search-->
-                        <a href="https://www.ticketmaster.com">
-                            <button class="link is-responsive">Click Here To Visit Ticketmaster</button>
-                        </a>
-
-
-                                    <br />
-                                    <br />
-<!--for version 2.0 to allow for new pages of events to display-->
-                                    <nav class="pagination">
-                                          <a href="" class="pagination-previous" disabled>Previous Page</a>
-                                          <button class="button page-button" id="next-page">Next Page</a>
-                                          <ul class="pagination-list">
-                                                
-                                          </ul>
-                                    </nav>
-                              </div>
-                        </article>
-                  </div>
-                  <!--display the city weather that user searches for-->
-                  <div class="column is-half">
-                        <div class="weather-container is-outlined">
-                              <article class="card">
-                                    <div class="is-outlined">
-                                          <p>Current Weather</p>
-
-                                          <br />
-                                          <h2 class="city">City</h2>
-                                          <br />
-                                          <h1 class="temp">Temp</h1>
-                                          <br />
-                                          <div class="description">Description</div>
-                                          <br />
-                                          <div class="humidity">Humidity</div>
-                                          <br />
-                                          <div class="wind">Wind</div>
-                                          <br />
-                                          <img srt="" alt="" class="icon" />
-                                    </div>
-                              </article>
-                        </div>
-                  </div>
-            </section>
-<!--Links to jquery, and javascript pages-->
-            <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-            <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-            <script src="./assets/JS/api1.js"></script>
-            <script src="./assets/JS/api2.js"></script>
-      </div>
+<!-- Stars -->
+<div class="stars">  
+    <div class="starWrap starProject">
+    
+    
+    </div>
+</div>
+<!-- <script src="assets\JS\Landing.js"></script> -->
 </body>
-
-</html>
