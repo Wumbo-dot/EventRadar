@@ -70,6 +70,17 @@ img {
   color: white;
 }
 
+<<<<<<< HEAD
 .card1 {
   margin: 5px;
 }
+=======
+.card1{
+  margin: 6px;
+}
+
+#datepicker.input-2{
+ background-color: black;
+ color: white;
+}
+>>>>>>> 3f3721dd22ffcc71c2529058fa875e7a7d322da4
