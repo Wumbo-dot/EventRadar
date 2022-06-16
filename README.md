@@ -12,6 +12,8 @@ AS A person who travels a lot, I WANT TO be able to search where i am going, SO 
 - [Built With](#built)
 - [Features](#feat)
 - [Preview](#Preview)
+- [GitHub Repo](#Github)
+- [Deployed Webpage](#deploy)
 - [Helpful Links](#Links)
 
 <a name ="Intro"></a>
@@ -63,6 +65,17 @@ Event Radar is an entertainment finding app that also provides the user with add
 [First page of Event Radar ]()
 The first landing page shows a greeting and a start button. that button takes them to the main page where the user can enter the city and date they choose. Upon clicking the start button, the user it presented with the returned information in each box below. In the events tab the user also has the ability to view seating and to click to purchase event tickets directly with TicketMaster.
 
+<a name ="Github"></a>
+
+## GitHub Repository
+
+https://github.com/Wumbo-dot/EventRadar.git
+
+<a name ="deploy"></a>
+
+## Deployed Webpage Link
+
+https://wumbo-dot.github.io/EventRadar/
 <a name ="Links"></a>
 
 ## Helpful Links
