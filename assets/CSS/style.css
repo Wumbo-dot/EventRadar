@@ -1,19 +1,18 @@
 * {
-    font-size: large;
-    color: white;
-    padding: 10px;
+  font-size: large;
+  color: white;
+  padding: 10px;
 }
 
-.startButton:hover{
-    background-color: limegreen;
-    color: black;
-
+.startButton:hover {
+  background-color: limegreen;
+  color: black;
 }
 
-.title{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .link {
@@ -62,11 +61,20 @@
 img {
   padding: 5px;
 }
-.link:hover{
+.link:hover {
   background-color: aqua;
   color: black;
 }
 
-.input{
+.input {
+  color: white;
+}
+
+.card1 {
+  margin: 6px;
+}
+
+#datepicker.input-2 {
+  background-color: black;
   color: white;
 }

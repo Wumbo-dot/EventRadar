@@ -62,8 +62,12 @@ Event Radar is an entertainment finding app that also provides the user with add
 
 ## Preview
 
-[First page of Event Radar ]()
-The first landing page shows a greeting and a start button. that button takes them to the main page where the user can enter the city and date they choose. Upon clicking the start button, the user it presented with the returned information in each box below. In the events tab the user also has the ability to view seating and to click to purchase event tickets directly with TicketMaster.
+- [First page of Event Radar ]()
+- [main page](assets/Images/1.png)
+- [main page](assets/Images/2.png)
+- [Datepicker](assets/Images/3.png)
+- [Search Results](assets/Images/4.png)
+- The first landing page shows a greeting and a start button. that button takes them to the main page where the user can enter the city and date they choose. Upon clicking the start button, the user it presented with the returned information in each box below. In the events tab the user also has the ability to view seating and to click to purchase event tickets directly with TicketMaster.
 
 <a name ="Github"></a>
 
