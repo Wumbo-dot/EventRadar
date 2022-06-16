@@ -18,16 +18,7 @@ var eventHandler = function (event) {
   }
 };
 
-// function searchBtnEl () afterclick="createItem()"
-// function createItem() {
-//   localStorage.setItem("city", cityName);
-// }
-// function readValue() {
-//   var saveCity = localStorage.getItem("city");
-//   var saveCityEl = getElementById("input");
-//   document.querySelector(saveCityEl).p = saveCity
-  
-// }
+//api search
 var getEventData = function (cityName) {
   var date = dateInputEl.value.trim();
   console.log(date);
@@ -83,15 +74,6 @@ var getEventData = function (cityName) {
         document.querySelector(".event-link").href = eventUrl; 
         first_iteration = false
      }
-     function newInfoHandler() {
-              var app = document.querySelector(".card")
-              var container = document.createElement("div")
-              app.setAttribute("class", "card")
-              app.appendChild(container)
-              app.appendChild(eventsName)
-              app.appendChild(eventDate)  
-     }
-        pageBtnEl.addEventListener("click", newInfoHandler);
      
       
     }} 
